@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".PhoneRegister">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:background="#B3E5FC"
+        android:paddingStart="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_cloud5" />
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:text="e簽到-手機註冊"
+        android:textColor="#283593"
+        android:background="#B3E5FC"
+        android:paddingStart="10dp"
+        android:paddingTop="3dp"
+        android:gravity="center_vertical|left"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/imageView"
+        app:layout_constraintBottom_toBottomOf="@id/imageView"
+        app:layout_constraintStart_toEndOf="@id/imageView"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView">
+
+        <LinearLayout
+            android:id="@+id/linStudentId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/row_border">
+
+            <TextView
+                android:id="@+id/txtStudentId"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1.5"
+                android:text="學員學號"
+                android:textAlignment="textEnd"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtStudentId"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="5"
+                android:background="@drawable/text_border"
+                android:inputType="textPersonName"
+                android:paddingStart="5dp"
+                android:text=""
+                android:textSize="16sp"
+                tools:text="學員學號" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linStudentName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/row_border">
+
+            <TextView
+                android:id="@+id/txtStudentName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1.5"
+                android:text="學員姓名"
+                android:textAlignment="textEnd"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtStudentName"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="5"
+                android:background="@drawable/text_border"
+                android:inputType="textPersonName"
+                android:paddingStart="5dp"
+                android:text=""
+                android:textSize="16sp"
+                tools:text="學員姓名" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linClassId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/row_border">
+
+            <TextView
+                android:id="@+id/txtClassId"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1.5"
+                android:text="班級代號"
+                android:textAlignment="textEnd"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtClassId"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="5"
+                android:background="@drawable/text_border"
+                android:inputType="textPersonName"
+                android:paddingStart="5dp"
+                android:text=""
+                android:textSize="16sp"
+                tools:text="班級代號" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/row_border">
+
+            <TextView
+                android:id="@+id/txtPassWord"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1.5"
+                android:text="註冊密碼"
+                android:textAlignment="textEnd"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtPassWord"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="5"
+                android:background="@drawable/text_border"
+                android:inputType="textPassword"
+                android:paddingStart="5dp"
+                android:text=""
+                android:textSize="16sp"
+                tools:text="註冊密碼" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnRegMenu"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/button_rounde"
+            android:text="註    冊"
+            android:textSize="20sp"
+            android:onClick="btnReg"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtImeiErr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LinearLayout1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

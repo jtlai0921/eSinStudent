@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">e簽到-學員版</string>
+
+    <string name="permission_rationale">本APP必需啟用座標定位，請同意授權.</string>
+    <string name="permission_denied_explanation">本APP必啟用座標定位,請同意授權.</string>
+    <string name="last_update_time_label">更新時間</string>
+    <string name="settings">確認</string>
+</resources>
